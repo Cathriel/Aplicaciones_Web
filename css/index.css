@@ -1,0 +1,619 @@
+a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:950px) {
+    #leftButton, #rightButton{
+        width:100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .searchbutton>.contenedor>div>div{
+        margin-top: 5%;
+    }
+    .widgets{
+        height: 700px;
+    }
+    .widgets>.contenedor>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        height: 80%;
+    }
+    .widgets>.contenedor>div>div{
+        margin: auto;
+    }
+    .plans{
+        height: 800px;
+    }
+    #titlePlans{
+        height: 20%;
+    }
+    #typeplans {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+    #typeplans>div{
+        margin: auto;
+    }
+    .testimony{
+        height: 1100px;
+    }
+    .testimony>.contenedor>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        height: 70%;
+    }
+    .testimony>.contenedor>div>div{
+        margin: auto;
+    }
+}
+
+/*Cabecera*/
+
+header{
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #F8F2FE;
+}
+
+header>.contenedor{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+#selectedPage{
+    font-weight: bolder;
+    text-decoration: underline black;
+}
+
+.uppart{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.uppart>div>div>a{
+    color: black;
+    text-align: center;
+    padding-top: 3%
+}
+
+#rightTextUp{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+#rightSpaceLogo{
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+}
+
+.uppart>div>a{
+    color: black;
+    text-align: center;
+    padding-top: 2%
+}
+
+#leftTextUp{
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    flex-wrap: wrap;
+}
+
+#LogIn{
+    padding: 2% 3%;
+    color: white;
+    height: 50%;
+    background-color: #FFB600;
+    border-radius: 5px;
+}
+
+
+/*Fin de cabecera*/
+/*Inicio Banner*/
+.banner{
+    width: 100%;
+    height: 560px;
+    background-image: url("../img/Fondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner>.contenedor{
+    height: 100%;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.space{
+    height: 10%;
+}
+
+.centerBanner{
+    max-width: 80%;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.3);
+    position: center;
+    border-radius: 10px;
+    height: 60%;
+}
+
+.centerBanner>h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 6%;
+    margin-top: 3%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.centerBanner>div>form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centerBanner>div>form>select{
+    padding: 2% 2%;
+    margin-left: 0;
+    font-size: 15px;
+    border-color: darkgray;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centerBanner>a{
+    padding: 1% 3%;
+    width: 16%;
+    color: white;
+    font-size: 20px;
+    background-color: #FFB600;
+    align-content: center;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*Fin Banner*/
+/*Inicio Search button*/
+.searchbutton{
+    width: 100%;
+    height: 580px;
+}
+
+.searchbutton>.contenedor{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.searchbutton>.contenedor>div>div{
+    text-align: center;
+}
+
+.searchbutton>.contenedor>div>div>h1{
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.searchbutton>.contenedor>div>div>a{
+    background-color: white;
+    padding: 1% 4%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:950px) {
+    #leftButton, #rightButton
+    {
+        height: 100%;
+        width: 50%;}
+    .searchbutton>.contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+    .searchbutton>.contenedor>div>div{
+        margin-top: 25%;
+    }
+    .widgets{
+        height: 600px;
+    }
+    .widgets>.contenedor>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .widgets>.contenedor>div>div{
+        height: 100%;
+        margin: auto;
+    }
+    .plans{
+        height: 600px;
+    }
+    #titlePlans{
+        height: 30%;
+        margin-bottom: 3%;
+    }
+    #typeplans {
+        display: flex;
+        height: 67%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .testimony{
+        height: 600px;
+    }
+    .testimony>.contenedor>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+#leftButton{
+    background-color: rgba(255,182,0,1);
+}
+
+#rightButton{
+    background-color: #8B5E83;
+}
+
+/*Fin Search button*/
+/*Inicio Widgets*/
+.widgets{
+    width: 100%;
+    background-color: #F8F2FE;
+}
+
+.widgets>.contenedor{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.widgets>.contenedor>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.widgets>.contenedor>div>div{
+    width: 400px;
+    display: flex;
+    padding: 2% 3%;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.widgets>.contenedor>div>div>div{
+    width: 50%;
+    text-align: right;
+    color: white;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.widgets>.contenedor>div>div>div>p{
+    font-size: 14px;
+    margin-top: 4%;
+    text-align: right;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#rightWidget{
+    background-color: rgba(255,182,0,0.7);
+    justify-content: space-between;
+}
+
+#rightWidget>div{
+    color: black;
+}
+
+#rightWidget>div>p{
+    color: black;
+}
+
+#rightWidget>div>.subrayado{
+    border-bottom: 1px solid black;
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+#leftWidget{
+    background-color: rgba(139,94,131,0.7);
+}
+
+.imgWidget{
+    text-align: right;
+    margin-right: 5%;
+}
+
+.subrayado{
+    border-bottom: 1px solid white;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 3%;
+}
+
+/*Fin Widgets*/
+/*Inicio Plans*/
+.plans{
+    width: 100%;
+    background-color:#F8F2FE;
+}
+.plans>.contenedor{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.plans>.contenedor>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.plans>.contenedor>div>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color:rgba(255,182,0,1);
+}
+
+.plans>.contenedor>div>p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 3%;
+    color:rgba(139,94,131,1);
+}
+
+.plans>.contenedor>div>div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#typeplans{
+    margin: auto;
+}
+
+#typeplans>div{
+    height: 300px;
+    width: 220px;
+    padding: 1% 1%;
+    background-color: white;
+}
+
+#typeplans>div>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    color:rgba(139,94,131,1);
+}
+
+#typeplans>div>div>div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#typeplans>div>div>div>p{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1%;
+    margin-left: 1%;
+    color: black;
+}
+
+#typeplans>div>div>p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    color: black;
+}
+
+#typeplans>div>a{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 1%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(255,182,0,1);
+    color: black;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+/*Fin PLans*/
+/*Inicio Testimony*/
+.testimony{
+    width: 100%;
+}
+
+.testimony>.contenedor{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.testimony>.contenedor>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.testimony>.contenedor>div{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+.testimonyWidget{
+    font-family: 'Quicksand', sans-serif;
+    width: 250px;
+    height: 300px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F8F2FE;
+    margin-top: 3%;
+}
+
+.testimonyWidget>img{
+    margin-left: 27.5%;
+    margin-top: 5%;
+    border-radius: 150px;
+}
+.testimonyWidget>h6{
+    margin-top: 3%;
+    font-size: 15px;
+}
+
+.testimonyWidget>p{
+    margin-top: 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Fin Testimony*/
+/*Footer*/
+
+footer{
+    padding: 2.5rem 0;
+    color: white;
+    text-align: center;
+    background-color: #3B2D39; /*#959595*/  /*#6b6b6b*/
+    border-top: .05rem solid #6b6b6b;
+}
+
+footer > .contenedor{
+    width: 75%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.center_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.div-seccion-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.div-seccion-footer > a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.p-titulo-footer{
+    font-weight: bold;
+}
+
+.p-cont-footer{
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.follow{
+    margin-left: 15%;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.div-seccion-footer > div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-seccion-footer > div > a{
+    margin-right: 5%;
+}
+
+/*Fin Footer*/
